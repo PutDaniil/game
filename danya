@@ -1,0 +1,24 @@
+import pygame
+pygame.init()
+dis=pygame.display.set_mode(500,500)
+pygame.display.update()
+pygame.display.set_caption('Змейка')
+blue=[0,0,255]
+red=[255,0,0]
+game_over = False
+
+
+x1=300
+y1=300
+
+
+x1_change=0
+y1_change=0
+while not game_over:
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            game_over = True
+        print(event)
+    pygame.draw.rect(blue[200,150,20,20])
+    pygame.draw.rect(blue[200,125,20,20])
+    pygame.draw.rect(blue[200,100,20,20])
